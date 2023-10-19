@@ -474,6 +474,7 @@ footer .footer-logo img {
 
     .home-info {
         margin-top: 35px;
+        text-align: center;
     }
 
     .about-service p {
@@ -507,8 +508,8 @@ footer .footer-logo img {
     }
 
     .home {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .menu-hamburguer  {
