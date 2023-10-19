@@ -466,14 +466,14 @@ footer .footer-logo img {
 
     .about-service p {
         margin-bottom: 30px;
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .about-us p {
         margin-bottom: 60px;
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .contact {
@@ -491,8 +491,8 @@ footer .footer-logo img {
     }
 
     .home {
-        padding-left: 65px;
-        padding-right: 65px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .menu-hamburguer  {
