@@ -48,6 +48,9 @@ body {
 }
 
 
+
+
+
 .background-2 {
     background-color: #000000;
     background-image: url('assets/img/fundo2.png');
@@ -90,6 +93,13 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px
+}
+
+.menu-toggle {
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 
@@ -445,3 +455,75 @@ footer .footer-logo img {
 
 
 /* Fim do Rodapé*/
+
+/*Menu Hamburguer*/
+
+@media (max-width: 768px) {
+
+    .home-info {
+        margin-top: 35px;
+    }
+
+    .about-service p {
+        margin-bottom: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .about-us p {
+        margin-bottom: 60px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    .nav-link  {
+        display: none;
+    }
+
+    .nav-brand {
+        padding-left: 65px;
+    }
+
+    .home {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .menu-hamburguer  {
+        padding-right: 65px;
+    }
+ 
+    .menu-togle  {
+        padding: 10px;
+        width: 10px;
+        height: 2px;
+        background-color: #440583;
+    }
+    
+    .menu-togle::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 10px;
+        height: 2px;
+        background-color: #440583;
+    }
+
+    .menu-togle::before {
+        content: "";
+        display: block;
+        position: relative;
+        width: 10px;
+        height: 2px;
+        background-color: #440583;
+    }
+
+}
+
+/*Fim do Menu Hamburguer*/
