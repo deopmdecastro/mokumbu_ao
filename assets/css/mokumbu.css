@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Arciformff';
+    src: url('assets/font/Arciform.otf') format('opentype');
+}
+
+/* CSS Geral*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    color: #8000FF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+body {
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+.span-purple {
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #8000FF;
+}
+
+.span-purple-2 {
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 800;
+    color: #8000FF;
+}
+
+.span-white {
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+.background-2 {
+    background-color: #000000;
+    background-image: url('assets/img/fundo2.png');
+    background-size: cover;
+    padding-bottom: 60px;
+}
+
+/* Seleção de texto padrão */
+::selection {
+    background-color: #8000FF;
+    /* Cor de fundo da seleção */
+    color: #ffffff;
+    /* Cor do texto selecionado */
+}
+
+/* Seleção de texto no Firefox */
+::-moz-selection {
+    background-color: #8000FF;
+    /* Cor de fundo da seleção no Firefox */
+    color: #ffffff;
+    /* Cor do texto selecionado no Firefox */
+}
+
+
+/*Fim CSS Geral*/
+
+/*Menu*/
+
+header {
+   display: flex;
+}
+
+.menu {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+
+.nav-brand {
+    padding-left: 150px;
+}
+
+
+.nav-link {
+    padding-right: 150px;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link ul {
+    display: flex;
+    margin-left: 30px;
+}
+
+.nav-link li {
+    margin-left: 30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-button {
+    color: white;
+    margin-left: 30px;
+    background-color: #6004bb;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.download-button:hover {
+    background-color: #440583;
+}
+
+/*Fim do menu*/
+
+/*Botão chat */
+
+.chat-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px; /* Altere "right" para posicionar no canto inferior direito */
+    cursor: pointer;
+    z-index: 1000; /* Certifique-se de que o botão fique na parte superior de outros elementos */
+    /* Defina a aparência do botão de chat */
+  }
+
+  .chat-button img {
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    /* Transição de escala para suavizar o efeito hover */
+}
+
+.chat-button img:hover {
+    transform: scale(1.1);
+    /* Escala de 110% ao passar o mouse (zoom) */
+}
+
+  /*Fim botão chat */
+
+/*Inicio*/
+
+main {
+   padding-top: 90px;
+}
+  
+
+.home {
+    background-image: url('assets/img/fundo1.png');
+    background-size: cover;
+    justify-content: space-between;
+    display: flex;
+    color: #ffffff;
+    background-color: #000000;
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-wrap: wrap;
+
+}
+
+.home-info {
+    margin-top: 80px;
+
+}
+
+.home-info p {
+
+    margin-top: 10px;
+}
+
+.download-devices {
+    margin-top: 10px;
+}
+
+.download-devices img {
+    width: 150px;
+    transition: transform 0.3s;
+    /* Transição de escala para suavizar o efeito hover */
+}
+
+.download-devices img:hover {
+    transform: scale(1.1);
+    /* Escala de 110% ao passar o mouse (zoom) */
+}
+
+.download-devices .google_play {
+    margin-left: 10px;
+}
+
+
+.home-img {
+    margin: 50px;
+}
+
+.home-img img {
+    width: 350px;
+}
+
+
+
+
+/*Fim do Inicio*/
+
+
+/*Sobre Nós*/
+
+.about {
+    color: #ffffff;
+}
+
+
+.about-us {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us p {
+    margin-bottom: 60px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/*Fim Sobre Nós*/
+
+
+/*Serviços*/
+
+
+.service {
+    color: #ffffff;
+}
+
+
+.about-service {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-service p {
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.service-card {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.card {
+    background-color: #8000FF;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    /* Transição de escala para suavizar o efeito hover */
+
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* Escala de 110% ao passar o mouse (zoom) */
+}
+
+.card img {
+
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.download-button-2 {
+    background-color: transparent;
+    color: #8000FF;
+    border: 1px solid #8000FF;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 40px;
+    transition: transform 0.9s;
+    /* Transição de escala para suavizar o efeito hover */
+}
+
+
+.download-button-2:hover {
+    background-color: #8000FF;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+
+/*Fim Serviços*/
+
+/*Contacto*/
+
+.contact {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+textarea {
+    color: #000000;
+    background-color: #52525213;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Arciformff', sans-serif;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #8000FF;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #440583;
+}
+
+
+/*Fim do Contacto*/
+
+/*Rodapé*/
+
+footer {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+    background-color: #8000FF;
+    text-align: center;
+}
+
+footer .footer-logo {
+    margin-bottom: 30px;
+}
+
+footer .footer-logo img {
+    width: 300px;
+}
+
+
+.social-media {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.social-media img {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    /* Transição de escala para suavizar o efeito hover */
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+    /* Escala de 110% ao passar o mouse (zoom) */
+}
+
+footer a {
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+footer .footer-logo img {
+    width: 250px;
+}
+
+
+/* Fim do Rodapé*/
