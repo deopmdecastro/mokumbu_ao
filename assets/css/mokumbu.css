@@ -460,6 +460,14 @@ footer .footer-logo img {
 
 @media (max-width: 768px) {
 
+    main {
+        padding-top: 44px;
+    }
+
+    .chat-button {
+        right: 15px; /* Altere "right" para posicionar no canto inferior direito */
+      }
+
     .home-info {
         margin-top: 35px;
     }
@@ -487,7 +495,11 @@ footer .footer-logo img {
     }
 
     .nav-brand {
-        padding-left: 65px;
+        padding-left: 15px;
+    }
+
+    .nav-brand img{
+        width: 130px;
     }
 
     .home {
@@ -496,7 +508,7 @@ footer .footer-logo img {
     }
 
     .menu-hamburguer  {
-        padding-right: 65px;
+        padding-right: 15px;
     }
  
     .menu-togle  {
@@ -540,6 +552,10 @@ footer .footer-logo img {
 
     .home-img img {
         width: 240px;
+    }
+
+    footer .footer-logo img {
+        width: 190px;
     }
 
 }
