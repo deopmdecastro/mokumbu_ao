@@ -691,6 +691,15 @@ footer .terms {
         flex-wrap: wrap;
     }
 
+    .accounnt {
+        max-width: 260px;
+    }
+
+    .section-accounnt {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
 }
 
 /*Fim do Menu Hamburguer*/
