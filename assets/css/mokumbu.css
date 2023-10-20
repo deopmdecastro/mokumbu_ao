@@ -103,6 +103,7 @@ header {
 
 .bar {
     width: 25px;
+    border-radius: 5px;
     height: 3px;
     background-color:  #ffffff;
     margin: 3px 0;
@@ -545,7 +546,7 @@ footer .footer-logo img {
     }
 
     .home-img {
-        margin: 39px auto 39px;
+        margin: 50px auto 50px;
     }
 
     footer .footer-logo img {
