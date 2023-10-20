@@ -396,7 +396,7 @@ main {
     margin: 0 auto;
 }
 
-form {
+.contact form {
     color: #000000;
     background-color: #ffffff;
     border: 1px solid #000000;
@@ -404,27 +404,28 @@ form {
     border-radius: 30px;
 }
 
-label,
-input,
+.contact label,
+.contact input,
 textarea {
     display: block;
     margin: 10px 0;
 }
 
-input[type="text"],
+.contact input[type="text"],
 textarea {
     color: #000000;
     background-color: #52525213;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #00000027;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Arciformff', sans-serif;
     max-width: 100%;
 }
 
-input[type="submit"] {
+.contact input[type="submit"] {
+    border: 1px solid #00000027;
     color: white;
     background-color: #8000FF;
     padding: 10px 40px;
@@ -436,7 +437,7 @@ input[type="submit"] {
     font-size: 15px;
 }
 
-input[type="submit"]:hover {
+.contact input[type="submit"]:hover {
     background-color: #440583;
 }
 
@@ -495,7 +496,7 @@ footer .footer-logo img {
     width: 250px;
 }
 
-.terms {
+footer .terms {
     display: inline-flex;
     gap: 15px;
     margin-top: 10px;
@@ -506,6 +507,84 @@ footer .footer-logo img {
 
 
 /* Fim do Rodapé*/
+
+/* Pagina Criar conta*/
+
+.accounnt {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.accounnt form {
+    display: flex;
+    flex-direction: column;
+}
+
+.accounnt label, .accounnt input {
+    margin: 6px 0;
+}
+
+.accounnt input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    border: 1px solid #00000027;
+    color: #000000;
+    background-color: #52525213;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Arciformff', sans-serif;
+    max-width: 100%;
+}
+
+.accounnt input[type="submit"] {
+    background-color: #8000FF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.accounnt input[type="submit"]:hover {
+    background-color: #440583;
+}
+
+.accounnt .terms {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.accounnt input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.section-accounnt {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000000;
+}
+
+
+.senhas {
+    width: 100%;
+}
+
+
+.senha-flex {
+    gap: 10px;
+    display: flex;
+}
+
+/* Fim da Pagina Criar conta*/
 
 /*Menu Hamburguer*/
 
@@ -606,6 +685,10 @@ footer .footer-logo img {
 
     .h2-mobile {
         display: block;
+    }
+
+    .senha-flex {
+        flex-wrap: wrap;
     }
 
 }
