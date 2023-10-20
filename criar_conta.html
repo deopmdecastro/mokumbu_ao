@@ -78,117 +78,34 @@
 
     <main>
 
-        <div class="chat-button">
-            <div class="Chat-img">
-                <a href="https://t.me/mokumbu_ao" target="_blank"> <img src="assets/icon/telegram.svg" alt="Telegram"></a>
-            </div>
-            <div class="Chat-img">
-                <a href="https://github.com/deopmdecastro/mokumbu_ao" target="_blank"> <img src="assets/icon/githab.svg" alt="Githab"></a>
-            </div>
-          </div>
+        <div class="container">
 
-        <div class="home">
-
-            <div class="home-info">
-                <h1> <span class="span-purple-2">MôKumbu</span> <br>
-                    Gere seu kumbu da <br>
-                    melhor forma</h1>
-                <p>O aplicativo de gestão financeira que vai revolucionar <br> a forma como você administra o seu dinheiro.
-                <div class="download-devices">
-                    <a href=""><img class="app_store" src="assets/icon/app_store.svg" alt="App Store"></a>
-                    <a href=""><img class="google_play" src="assets/icon/google_play.svg" alt="Google Play"></a>
+            
+            <h2>Criar Conta</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefone">Número de Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+    
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+    
+                <label for="confirmar-senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+    
+                <div class="terms">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceitar Termos e Condições</label>
                 </div>
-                </p>
-            </div>
-
-            <div class="home-img">
-                <img src="assets/img/mokumbu _mockup.png" alt="">
-            </div>
-
+    
+                <input type="submit" value="Criar Conta">
+            </form>
         </div>
-
-        <div class="background-2">
-
-            <div class="about">
-                <div class="about-us">
-
-                    <h2>Sobre Nós</h2>
-                    <p><span class="span-purple">MôKumbu</span> é umua ferramenta de gestão financeira de código aberto,
-                        desenvolvida pela <span class="span-purple">Brain Net</span>, uma empresa
-                        angolana especializada em tecnologia e desenvolvimento. Aqui, você controla suas finanças e
-                        colabora
-                        para tornar a gestão financeira mais acessível e personalizada para todos.</p>
-
-                </div>
-
-
-            </div>
-
-            <div class="service">
-                <div class="about-service">
-
-                    <h2 class="h2-normal">Nossos Serviços - O Que Oferecemos</h2>
-                    <h2 class="h2-mobile">Nossos Serviços</h2>
-                    <p>Acompanhe receitas, despesas, dívidas e o dinheiro real nas suas contas correntes com facilidade.
-                        Simplifique sua vida financeira com o <span class="span-white">MôKumbu</span> e tenha o controle
-                        completo das suas finanças, onde quer
-                        que esteja!</p>
-
-                </div>
-
-                <div class="service-card">
-                    <div class="card">
-                        <img src="assets/icon/Receitas.svg" alt="Receitas">
-                        <h4>Receitas</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/icon/Receitas.svg" alt="Receitas">
-                        <h4>Despesas</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/icon/Receitas.svg" alt="Receitas">
-                        <h4>Dividas</h4>
-                    </div>
-                    <div class="card">
-                        <img src="assets/icon/Receitas.svg" alt="Receitas">
-                        <h4>Kumbu</h4>
-                    </div>
-                </div>
-
-                <div class="about-service">
-
-                    <p>Com <span class="span-white">MôKumbu</span>, você terá o poder de tomar decisões financeiras
-                        informadas
-                        e alcançar seus objetivos
-                        financeiros. Não deixe suas finanças ao acaso, junte-se à revolução <span
-                            class="span-white">MôKumbu</span> hoje mesmo.</p>
-
-                    <button class="download-button-2">Brevemente</button>
-
-                </div>
-
-
-
-            </div>
-
-            <div class="contact">
-                <h2>Entre em contacto</h2>
-                <form action="processa_formulario.php" method="post">
-                  <label for="nome">Nome:</label>
-                  <input type="text" id="nome" name="nome" required>
-            
-                  <label for="email">Email:</label>
-                  <input type="text" id="email" name="email" required>
-            
-                  <label for="mensagem">Mensagem:</label>
-                  <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-                  <input type="submit" value="Enviar">
-                </form>
-              </div>
-
-        </div>
-
 
  
 
