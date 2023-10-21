@@ -552,6 +552,11 @@ textarea {
 
 }
 
+#newsletter-form input {
+    padding-left: 20px;
+
+}
+
 
 
 .newsletter-form button {
