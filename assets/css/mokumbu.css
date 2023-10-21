@@ -86,68 +86,71 @@ body {
 /*Menu*/
 
 header {
-    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0px 3px 10px #1f003b2d;
 }
 
-ul {
-    list-style-type: none;
-  }
-
-.menu {
-    width: 100%;
-    z-index: 1000;
-    position: fixed;
-    background-color: black;
+.nav-bar {
     display: flex;
     justify-content: space-between;
+    padding: 1.4rem 9rem;
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.logo h1 {
+    color: #fff;
 }
 
-.bar {
-    width: 25px;
-    border-radius: 5px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 3px 0;
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-
-.nav-brand {
-    padding-left: 150px;
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
 }
 
+.nav-list-mobile ul {
+    list-style: none;
+}
+
+.nav-list-mobile li {
+    margin: 10px;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
 
 .nav-link {
-    padding-right: 150px;
-    align-items: center;
-    display: flex;
-}
-
-.nav-link ul {
-    display: flex;
-    margin-left: 30px;
-}
-
-.nav-link li {
-    margin-left: 30px;
-}
-
-.nav-link a {
     text-decoration: none;
-    color: white;
+    color: #fff;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .download-button {
     color: white;
-    margin-left: 30px;
     background-color: #6004bb;
     padding: 10px 40px;
     border-radius: 50px;
@@ -160,6 +163,16 @@ ul {
 
 .download-button:hover {
     background-color: #440583;
+}
+
+.btns-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-menu-icon button {
+   background-color: transparent;
+   border: none;
 }
 
 /*Fim do menu*/
@@ -745,14 +758,9 @@ input[type="password"] {
 
 /* Fim da Pagina Criar conta*/
 
-/*Menu Hamburguer*/
+/*responsivo*/
 
 @media (max-width: 768px) {
-
-    .menu-toggle {
-        display: flex;
-    }
-
 
 
     h2 {
@@ -791,26 +799,15 @@ input[type="password"] {
     }
 
 
-    .nav-link {
-        display: none;
-    }
 
-    .nav-brand {
-        padding-left: 15px;
-    }
 
-    .nav-brand img {
-        width: 130px;
-    }
+
 
     .home {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .menu-hamburguer {
-        padding-right: 15px;
-    }
 
 
     .service-card {
@@ -865,7 +862,7 @@ input[type="password"] {
     }
 
     .newsletter {
-        
+
         width: 90%;
     }
 
@@ -875,7 +872,7 @@ input[type="password"] {
 
     .newsletter-form button {
         padding: 10px 18px;
-      
+
     }
 
     .newsletter-section p {
@@ -884,7 +881,7 @@ input[type="password"] {
     }
 
     .contact form {
-       margin-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     .newsletter-section h2 {
@@ -893,11 +890,51 @@ input[type="password"] {
 
     #newsletter-form ::placeholder {
         font-size: 14px;
-    
+
     }
-    
-    
+
+
 
 }
+
+/*Fim do responsivo*/
+
+
+/*Menu Hamburguer*/
+
+@media screen and (max-width: 730px) {
+    
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .mobile-menu {
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 1rem;
+    }
+
+    
+    .download-button-2 {
+        margin: 12px;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+}
+
+
 
 /*Fim do Menu Hamburguer*/

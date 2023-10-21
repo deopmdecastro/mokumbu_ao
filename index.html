@@ -37,44 +37,49 @@
 
 <body>
 
-    <header class="menu">
-
-
-        <nav class="nav-brand">
-            <a href="index.html"><img src="assets/icon/mokumbu_logo.svg" alt=""></a>
-        </nav>
-
-        <div class="menu-hamburguer">
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/icon/mokumbu_logo.svg" alt="MôKumbu">
             </div>
-        </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="" class="nav-link">Sobre</a></li>
+                    <li><a href="" class="nav-link">Serviços</a></li>
+                </ul>
 
+                <div class="btns-menu">
+                    <button class="download-button-2">Criar conta</button>
+                    <button class="download-button">Baixar</button>
+                </div>
+             
 
+            </div>
 
-        <nav class="nav-link">
-
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Sobre</a>
-                </li>
-                <li>
-                    <a href="">Serviços</a>
-                </li>
-            </ul>
-
-            <a href="criar_conta.html"><button class="button-3">Criar Conta</button></a>
-            <button class="download-button">Baixar</button>
-
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/icon/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
 
+        <div class="mobile-menu">
+            <div class="nav-list-mobile">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="" class="nav-link">Sobre</a></li>
+                    <li><a href="" class="nav-link">Serviços</a></li>
+                </ul>
 
+               
+                    <button class="download-button-2">Criar conta</button>
+         
+             
+
+            </div>
+
+        </div>
     </header>
+
 
     <main>
 
@@ -239,13 +244,14 @@
                 <h2>Entre em contacto</h2>
                 <form action="processa_formulario.php" method="post">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome"placeholder="Digite seu nome" required>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
 
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"
+                        required></textarea>
 
                     <input type="submit" value="Enviar">
                 </form>
@@ -267,7 +273,8 @@
                         <form id="newsletter-form">
 
                             <div>
-                                <input type="email" id="email-newsletter" name="email" placeholder="Digite seu e-mail" required>
+                                <input type="email" id="email-newsletter" name="email" placeholder="Digite seu e-mail"
+                                    required>
                             </div>
                             <button type="submit">Inscrever-se</button>
                         </form>
