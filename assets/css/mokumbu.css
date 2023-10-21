@@ -555,8 +555,8 @@ textarea {
 
 
 .newsletter-form button {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #8000FF;
     border: 1px solid #ffffff;
     border-radius: 50px;
     padding: 10px 40px;
@@ -569,8 +569,8 @@ textarea {
 }
 
 .newsletter-form button:hover {
-    background-color: #ffffff;
-    color: #8000FF;
+    background-color: #8000FF;
+    color: #ffffff;
 }
 
 .newsletter .newsletter-form input {
