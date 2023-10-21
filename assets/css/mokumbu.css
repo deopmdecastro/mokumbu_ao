@@ -886,6 +886,13 @@ input[type="password"] {
         margin-bottom: 30x;
     }
 
+    #newsletter-form ::placeholder {
+        font-size: 14px;
+    
+    }
+    
+    
+
 }
 
 /*Fim do Menu Hamburguer*/
