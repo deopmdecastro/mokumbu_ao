@@ -423,14 +423,18 @@ main {
     margin-bottom: 60px;
 }
 
-.faq-container {
+.faq-bg {
+    justify-content: space-between;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 20px;
     border: solid 1px #ffffff1a;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.faq-container {
+    width: 100%;
 }
 
 .faq-title {
@@ -932,6 +936,14 @@ input[type="password"] {
     .logo img {
         width: 80%;
     }
+
+    .mobile-menu {
+    display: none;
+}
+
+.open {
+    display: block;
+}
 
 }
 
