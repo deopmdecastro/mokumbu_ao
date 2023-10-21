@@ -16,6 +16,11 @@ h2 {
     margin-bottom: 60px;
 }
 
+h3 {
+    font-size: 16px;
+    color: #8000FF;
+}
+
 h1 {
     font-weight: 200;
 }
@@ -24,6 +29,7 @@ body {
     font-family: 'Arciformff', sans-serif;
     font-weight: 100;
     font-size: 15px;
+    color: #fff;
 }
 
 
@@ -275,6 +281,7 @@ main {
 
 .service {
     color: #ffffff;
+    margin-bottom: 60px;
 }
 
 
@@ -337,7 +344,6 @@ main {
     font-family: 'Arciformff', sans-serif;
     font-weight: 100;
     font-size: 15px;
-    margin-bottom: 40px;
     transition: transform 0.9s;
     /* Transição de escala para suavizar o efeito hover */
 }
@@ -388,6 +394,61 @@ main {
 
 
 /*Fim Serviços*/
+
+
+/*Perguntas Frequentes*/
+
+.faq {
+   width: 50%;
+   margin: auto;
+   margin-bottom: 60px;
+}
+
+.faq-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: solid 1px #ffffff3f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.faq-title {
+    width: 70%; /* Ajuste o tamanho de acordo com suas necessidades */
+    font-weight: bold;
+}
+
+.faq-button {
+        width: 40px;
+        background-color: #8000FF;
+        color: #fff;
+        border: none;
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    
+}
+
+.faq-button:hover {
+    background-color:  #440583;
+
+}
+
+.faq-answer {
+    display: none;
+}
+
+.faq-button::after {
+    content: "+";
+}
+
+.faq-show-answer .faq-button::after {
+    content: "-";
+}
+
+/*Fim Perguntas Frequentes*/
+
 
 /*Contacto*/
 
@@ -584,6 +645,9 @@ footer .terms {
     display: flex;
 }
 
+
+
+
 /* Fim da Pagina Criar conta*/
 
 /*Menu Hamburguer*/
@@ -699,6 +763,10 @@ footer .terms {
         padding-top: 30px;
         padding-bottom: 60px;
     }
+
+    .faq {
+        width: 90%;
+     }
 
 }
 
