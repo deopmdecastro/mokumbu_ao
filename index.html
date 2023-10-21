@@ -175,14 +175,16 @@
 
             </div>
 
-           
+
 
             <div class="faq">
 
                 <h2>Perguntas Frequentes</h2>
 
                 <div class="faq-container">
-                    <div class="faq-title"> <h3> Pergunta 1: Qual é a primeira pergunta?</h3></div>
+                    <div class="faq-title">
+                        <h3> Pergunta 1: Qual é a primeira pergunta?</h3>
+                    </div>
                     <button class="faq-button" onclick="toggleAnswer(1)"></button>
                 </div>
                 <div class="faq-answer" id="faq-answer-1">
@@ -190,7 +192,9 @@
                 </div>
 
                 <div class="faq-container">
-                    <div class="faq-title"> <h3> Pergunta 2: Qual é a primeira pergunta?</div>
+                    <div class="faq-title">
+                        <h3> Pergunta 2: Qual é a primeira pergunta?
+                    </div>
                     <button class="faq-button" onclick="toggleAnswer(2)"></button>
                 </div>
                 <div class="faq-answer" id="faq-answer-2">
@@ -198,7 +202,9 @@
                 </div>
 
                 <div class="faq-container">
-                    <div class="faq-title"> <h3> Pergunta 3: Qual é a primeira pergunta?</div>
+                    <div class="faq-title">
+                        <h3> Pergunta 3: Qual é a primeira pergunta?
+                    </div>
                     <button class="faq-button" onclick="toggleAnswer(3)"></button>
                 </div>
                 <div class="faq-answer" id="faq-answer-3">
@@ -206,7 +212,9 @@
                 </div>
 
                 <div class="faq-container">
-                    <div class="faq-title"> <h3> Pergunta 4: Qual é a primeira pergunta?</div>
+                    <div class="faq-title">
+                        <h3> Pergunta 4: Qual é a primeira pergunta?
+                    </div>
                     <button class="faq-button" onclick="toggleAnswer(4)"></button>
                 </div>
                 <div class="faq-answer" id="faq-answer-4">
@@ -214,7 +222,9 @@
                 </div>
 
                 <div class="faq-container">
-                    <div class="faq-title"> <h3> Pergunta 5: Qual é a primeira pergunta?</div>
+                    <div class="faq-title">
+                        <h3> Pergunta 5: Qual é a primeira pergunta?
+                    </div>
                     <button class="faq-button" onclick="toggleAnswer(5)"></button>
                 </div>
                 <div class="faq-answer" id="faq-answer-5">
@@ -229,19 +239,50 @@
                 <h2>Entre em contacto</h2>
                 <form action="processa_formulario.php" method="post">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome"placeholder="Digite seu nome" required>
 
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
 
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
 
                     <input type="submit" value="Enviar">
                 </form>
             </div>
 
+            <div class="newsletter-section">
+
+                <h2>Assine a nossa Newsletter</h2>
+
+                <p>Inscreva-se na nossa Newsletter e receba as últimas novidades sobre a <span
+                        class="span-purple">Môkumbu</span> directamente na sua
+                    caixa de entrada. Fique por dentro em um clique!</p>
+
+                <div class="newsletter">
+
+
+
+                    <div class="newsletter-form">
+                        <form id="newsletter-form">
+
+                            <div>
+                                <input type="email" id="email-newsletter" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <button type="submit">Inscrever-se</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
         </div>
+
+
 
 
 

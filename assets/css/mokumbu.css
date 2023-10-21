@@ -86,8 +86,12 @@ body {
 /*Menu*/
 
 header {
-   display: flex;
+    display: flex;
 }
+
+ul {
+    list-style-type: none;
+  }
 
 .menu {
     width: 100%;
@@ -111,7 +115,7 @@ header {
     width: 25px;
     border-radius: 5px;
     height: 3px;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     margin: 3px 0;
 }
 
@@ -165,13 +169,15 @@ header {
 .chat-button {
     position: fixed;
     bottom: 40px;
-    right: 40px; /* Altere "right" para posicionar no canto inferior direito */
+    right: 40px;
+    /* Altere "right" para posicionar no canto inferior direito */
     cursor: pointer;
-    z-index: 1000; /* Certifique-se de que o botão fique na parte superior de outros elementos */
+    z-index: 1000;
+    /* Certifique-se de que o botão fique na parte superior de outros elementos */
     /* Defina a aparência do botão de chat */
-  }
+}
 
-  .chat-button img {
+.chat-button img {
     margin-bottom: 15px;
     transition: transform 0.3s;
     /* Transição de escala para suavizar o efeito hover */
@@ -182,14 +188,14 @@ header {
     /* Escala de 110% ao passar o mouse (zoom) */
 }
 
-  /*Fim botão chat */
+/*Fim botão chat */
 
 /*Inicio*/
 
 main {
-   padding-top: 90px;
+    padding-top: 90px;
 }
-  
+
 
 .home {
     background-image: url('assets/img/fundo1.png');
@@ -215,10 +221,10 @@ main {
 }
 
 .download-devices {
-        display: inline-flex;
-        gap: 16px;
-        margin-top: 20px;
-    }
+    display: inline-flex;
+    gap: 16px;
+    margin-top: 20px;
+}
 
 .download-devices img {
     width: 150px;
@@ -399,9 +405,9 @@ main {
 /*Perguntas Frequentes*/
 
 .faq {
-   width: 50%;
-   margin: auto;
-   margin-bottom: 60px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
 .faq-container {
@@ -415,23 +421,24 @@ main {
 }
 
 .faq-title {
-    width: 70%; /* Ajuste o tamanho de acordo com suas necessidades */
+    width: 70%;
+    /* Ajuste o tamanho de acordo com suas necessidades */
     font-weight: bold;
 }
 
 .faq-button {
-        width: 40px;
-        background-color: #8000FF;
-        color: #fff;
-        border: none;
-        padding: 10px 10px;
-        cursor: pointer;
-        border-radius: 5px;
-    
+    width: 40px;
+    background-color: #8000FF;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
 }
 
 .faq-button:hover {
-    background-color:  #440583;
+    background-color: #440583;
 
 }
 
@@ -455,6 +462,7 @@ main {
 .contact {
     width: 50%;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 .contact form {
@@ -504,6 +512,83 @@ textarea {
 
 
 /*Fim do Contacto*/
+
+/*NEWSLETTER*/
+
+.newsletter-section p {
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    color: #8000FF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter {
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    background-color: #8000FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#newsletter-form {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#newsletter-form ::placeholder {
+    color: #fff;
+
+}
+
+
+
+.newsletter-form button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    transition: transform 0.9s;
+    /* Transição de escala para suavizar o efeito hover */
+}
+
+.newsletter-form button:hover {
+    background-color: #ffffff;
+    color: #8000FF;
+}
+
+.newsletter .newsletter-form input {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    font-family: 'Arciformff', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+
+
+
+/*Fim NEWSLETTER*/
 
 /*Rodapé*/
 
@@ -585,11 +670,16 @@ footer .terms {
     flex-direction: column;
 }
 
-.accounnt label, .accounnt input {
+.accounnt label,
+.accounnt input {
     margin: 6px 0;
+    color: #000000;
 }
 
-.accounnt input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+.accounnt input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
     border: 1px solid #00000027;
     color: #000000;
     background-color: #52525213;
@@ -669,8 +759,9 @@ footer .terms {
     }
 
     .chat-button {
-        right: 15px; /* Altere "right" para posicionar no canto inferior direito */
-      }
+        right: 15px;
+        /* Altere "right" para posicionar no canto inferior direito */
+    }
 
     .home-info {
         margin-top: 35px;
@@ -695,7 +786,7 @@ footer .terms {
     }
 
 
-    .nav-link  {
+    .nav-link {
         display: none;
     }
 
@@ -703,7 +794,7 @@ footer .terms {
         padding-left: 15px;
     }
 
-    .nav-brand img{
+    .nav-brand img {
         width: 130px;
     }
 
@@ -712,18 +803,18 @@ footer .terms {
         padding-right: 30px;
     }
 
-    .menu-hamburguer  {
+    .menu-hamburguer {
         padding-right: 15px;
     }
- 
+
 
     .service-card {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
         gap: 20px;
-       margin: auto;
-       margin-bottom: 30px;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     .card {
@@ -766,7 +857,7 @@ footer .terms {
 
     .faq {
         width: 90%;
-     }
+    }
 
 }
 
