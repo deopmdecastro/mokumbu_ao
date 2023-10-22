@@ -459,6 +459,11 @@ main {
 
 }
 
+
+.faq-answer p{
+width: 80%;
+}
+
 .faq-answer {
     display: none;
 }
