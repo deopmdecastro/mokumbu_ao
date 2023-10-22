@@ -461,7 +461,10 @@ main {
 
 
 .faq-answer p{
-width: 80%;
+  width: 80%;
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .faq-answer {
