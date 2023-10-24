@@ -202,6 +202,17 @@ header {
     /* Escala de 110% ao passar o mouse (zoom) */
 }
 
+.Chat-img {
+   background-color: #fff;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   margin: 10px;
+   box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
+-webkit-box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
+-moz-box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
+}
+
 /*Fim botão chat */
 
 /*Inicio*/
@@ -796,7 +807,7 @@ align-items: center;
 
 
     h2 {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     main {
