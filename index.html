@@ -238,9 +238,11 @@
                         </div>
                         <div class="faq-answer" id="faq-answer-4">
                             <p> O MôKumbu está a ser desenvolvido pela Brain Net, uma equipe de profissionais dedicados
-                                com ampla experiência em tecnologia, junto de especialistas em gestão financeira. A equipe da Brain Net é especializada no
+                                com ampla experiência em tecnologia, junto de especialistas em gestão financeira. A
+                                equipe da Brain Net é especializada no
                                 desenvolvimento de soluções inovadoras para ajudar as pessoas,
-                                de maneira eficaz. Fique ligado para futuros anúncios sobre a data de lançamento do aplicativo.
+                                de maneira eficaz. Fique ligado para futuros anúncios sobre a data de lançamento do
+                                aplicativo.
                             </p>
                         </div>
                     </div>
@@ -259,15 +261,18 @@
                 <form action="processa_formulario.php" method="post">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <p id="p-nome"></p>
 
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <p id="p-email"></p>
 
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"
                         required></textarea>
+                    <p id="p-mensagem"></p>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" onclick="verificar ()">
                 </form>
             </div>
 
