@@ -477,9 +477,6 @@ main {
     content: "+";
 }
 
-.faq-show-answer .faq-button::after {
-    content: "-";
-}
 
 /*Fim Perguntas Frequentes*/
 
