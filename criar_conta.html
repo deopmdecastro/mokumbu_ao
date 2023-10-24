@@ -31,6 +31,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>MôKumbu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/mokumbu.css">
     <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon">
 </head>
@@ -40,7 +41,7 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-               <a href="index.html"><img src="assets/icon/mokumbu_logo.svg" alt="MôKumbu"></a> 
+                <a href="index.html"><img src="assets/icon/mokumbu_logo.svg" alt="MôKumbu"></a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -107,19 +108,29 @@
                     <p id="p-email-criar-conta"></p>
 
                     <label for="telefone">Número de Telefone:</label>
-                    <input type="tel" id="telefone-criar-conta" name="telefone" placeholder="Digite seu número" required>
+                    <input type="tel" id="telefone-criar-conta" name="telefone" placeholder="Digite seu número"
+                        required>
 
                     <p id="p-telefone-criar-conta"></p>
 
                     <div class="senha-flex">
                         <div class="senhas">
                             <label for="senha">Senha:</label>
-                            <input type="password" id="senha-criar-conta" name="senha" placeholder="Digite sua senha" required>
-                        </div>
+                            <div class="senha-position">
+                                <input type="password" id="senha-criar-conta" name="senha"
+                                    placeholder="Digite sua senha" required>
+                                    <i onclick="showPassword ()" id="btn-senha" class="bi bi-eye-fill"></i>
+                            </div>
 
+                        </div>
                         <div class="senhas">
                             <label for="confirmar-senha">Confirmar Senha:</label>
-                            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+                            <div  class="senha-position">
+                                <input type="password" id="confirmar-senha" name="confirmar-senha"
+                                    placeholder="Confirme sua senha" required>
+                                    <i onclick="showPassword1 ()" id="btn-senha1" class="bi bi-eye-fill"></i>
+                            </div>
+
                         </div>
 
                     </div>
@@ -133,7 +144,7 @@
                         <label for="termos"> <a href="">Aceitar Termos e Condições</a> </label>
                     </div>
 
-                    <input  onclick="verificarCriarConta()"  type="submit" value="Criar Conta">
+                    <input onclick="verificarCriarConta()" type="submit" value="Criar Conta">
                 </form>
             </div>
 

@@ -769,6 +769,22 @@ input[type="password"] {
 margin-top: 6px;
 }
 
+.senha-position {
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.senha-position i{
+   color: #8000FF;
+   cursor: pointer;
+   position: absolute;
+   right: 5%;
+   font-size: 15px;
+   margin-top: 5px;
+    }
+    
+
 
 
 
