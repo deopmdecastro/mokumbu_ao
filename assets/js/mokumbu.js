@@ -45,4 +45,50 @@ function verificar() {
     }
 }
 
+function verificarCriarConta() {
+    let senha1 = document.getElementById("senha-criar-conta").value;
+    let senha2 = document.getElementById("confirmar-senha").value;
+    let nomeCriarConta = document.getElementById("nome-criar-conta").value;
+    let emailCriarConta = document.getElementById("email-criar-conta").value;
+    let telefoneCriarConta = document.getElementById("telefone-criar-conta").value;
+
+
+    if (nomeCriarConta === "" || nomeCriarConta === null) {
+        let p = document.getElementById("p-nome-criar-conta");
+        p.innerHTML = "O campo não pode estar vazio";
+        p.style.color = "red";
+    } else {
+        let p = document.getElementById("p-nome-criar-conta");
+        p.innerHTML = "";
+    }
+
+    if (emailCriarConta === "" || emailCriarConta === null) {
+        let p = document.getElementById("p-email-criar-conta");
+        p.innerHTML = "O campo não pode estar vazio";
+        p.style.color = "red";
+    } else {
+        let p = document.getElementById("p-email-criar-conta");
+        p.innerHTML = "";
+    }
+
+    if (telefoneCriarConta === "" || telefoneCriarConta === null) {
+        let p = document.getElementById("p-telefone-criar-conta");
+        p.innerHTML = "O campo não pode estar vazio";
+        p.style.color = "red";
+    } else {
+        let p = document.getElementById("p-telefone-criar-conta");
+        p.innerHTML = "";
+    }
+
+    if (senha1 !== senha2 || senha1 === "" || senha1 === null ) {
+        let p = document.getElementById("p-senha-criar-conta");
+        p.innerHTML = "A senha não corresponde";
+        p.style.color = "red";
+    } else {
+        let p = document.getElementById("p-senha-criar-conta");
+        p.innerHTML = "";
+    }
+
+}
+
 
