@@ -21,6 +21,8 @@ function verificar() {
         let p = document.getElementById("p-nome");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+
     } else {
         let p = document.getElementById("p-nome");
         p.innerHTML = "";
@@ -30,6 +32,8 @@ function verificar() {
         let p = document.getElementById("p-email");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+
     } else {
         let p = document.getElementById("p-email");
         p.innerHTML = "";
@@ -39,6 +43,8 @@ function verificar() {
         let p = document.getElementById("p-mensagem");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+        
     } else {
         let p = document.getElementById("p-mensagem");
         p.innerHTML = "";
@@ -57,6 +63,8 @@ function verificarCriarConta() {
         let p = document.getElementById("p-nome-criar-conta");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+
     } else {
         let p = document.getElementById("p-nome-criar-conta");
         p.innerHTML = "";
@@ -66,6 +74,8 @@ function verificarCriarConta() {
         let p = document.getElementById("p-email-criar-conta");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+
     } else {
         let p = document.getElementById("p-email-criar-conta");
         p.innerHTML = "";
@@ -75,6 +85,8 @@ function verificarCriarConta() {
         let p = document.getElementById("p-telefone-criar-conta");
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+        
     } else {
         let p = document.getElementById("p-telefone-criar-conta");
         p.innerHTML = "";
@@ -84,6 +96,8 @@ function verificarCriarConta() {
         let p = document.getElementById("p-senha-criar-conta");
         p.innerHTML = "A senha não corresponde";
         p.style.color = "red";
+        p.style.fontSize = "14px";
+
     } else {
         let p = document.getElementById("p-senha-criar-conta");
         p.innerHTML = "";

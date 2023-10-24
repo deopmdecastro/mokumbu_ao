@@ -762,6 +762,7 @@ input[type="password"] {
 .senha-flex {
     gap: 10px;
     display: flex;
+margin-top: 6px;
 }
 
 
