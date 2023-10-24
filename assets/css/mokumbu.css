@@ -172,8 +172,8 @@ header {
 }
 
 .mobile-menu-icon button {
-   background-color: transparent;
-   border: none;
+    background-color: transparent;
+    border: none;
 }
 
 /*Fim do menu*/
@@ -203,14 +203,14 @@ header {
 }
 
 .Chat-img {
-   background-color: #fff;
-   border-radius: 50%;
-   width: 60px;
-   height: 60px;
-   margin: 10px;
-   box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
--webkit-box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
--moz-box-shadow: -15px 30px 34px -9px rgba(0,0,0,0.48);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    box-shadow: -1px -4px 73px -42px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -4px 73px -42px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -4px 73px -42px rgba(0,0,0,0.75);
 }
 
 /*Fim botão chat */
@@ -473,11 +473,11 @@ main {
 }
 
 
-.faq-answer p{
-  width: 80%;
-  text-align: justify;
-  font-size: 14px;
-  margin-top: 10px;
+.faq-answer p {
+    width: 80%;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .faq-answer {
@@ -770,31 +770,31 @@ input[type="password"] {
 }
 
 .senhas input {
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 
 .senha-flex {
     gap: 10px;
     display: flex;
-margin-top: 6px;
+    margin-top: 6px;
 }
 
 .senha-position {
-position: relative;
-display: flex;
-align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.senha-position i{
-   color: #8000FF;
-   cursor: pointer;
-   position: absolute;
-   right: 5%;
-   font-size: 15px;
-   margin-top: 5px;
-    }
-    
+.senha-position i {
+    color: #8000FF;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
 
 
 
@@ -802,6 +802,8 @@ align-items: center;
 /* Fim da Pagina Criar conta*/
 
 /*responsivo*/
+
+
 
 @media (max-width: 768px) {
 
@@ -940,13 +942,22 @@ align-items: center;
 
 }
 
+
+@media  (max-width: 300px) {
+
+    .newsletter {
+        width: 80%;
+    }
+
+}
+
 /*Fim do responsivo*/
 
 
 /*Menu Hamburguer*/
 
 @media screen and (max-width: 730px) {
-    
+
     .nav-list {
         display: none;
     }
@@ -954,7 +965,7 @@ align-items: center;
     .mobile-menu-icon {
         display: block;
     }
-    
+
     .mobile-menu {
         display: block;
         padding: 1rem 2rem;
@@ -967,7 +978,7 @@ align-items: center;
         padding: 1.4rem 1rem;
     }
 
-    
+
     .download-button-2 {
         margin: 12px;
     }
@@ -977,12 +988,12 @@ align-items: center;
     }
 
     .mobile-menu {
-    display: none;
-}
+        display: none;
+    }
 
-.open {
-    display: block;
-}
+    .open {
+        display: block;
+    }
 
 }
 

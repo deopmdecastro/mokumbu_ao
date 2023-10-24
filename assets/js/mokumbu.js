@@ -86,13 +86,13 @@ function verificarCriarConta() {
         p.innerHTML = "O campo não pode estar vazio";
         p.style.color = "red";
         p.style.fontSize = "14px";
-        
+
     } else {
         let p = document.getElementById("p-telefone-criar-conta");
         p.innerHTML = "";
     }
 
-    if (senha1 !== senha2 || senha1 === "" || senha1 === null ) {
+    if (senha1 !== senha2 || senha1 === "" || senha1 === null) {
         let p = document.getElementById("p-senha-criar-conta");
         p.innerHTML = "A senha não corresponde";
         p.style.color = "red";
@@ -106,29 +106,56 @@ function verificarCriarConta() {
 }
 
 
-function showPassword () {
+function showPassword() {
     let inputPass = document.getElementById("senha-criar-conta");
     let btnShowPass = document.getElementById("btn-senha");
 
-    if (inputPass.type === "password"){
-        inputPass.setAttribute("type","text")
+    if (inputPass.type === "password") {
+        inputPass.setAttribute("type", "text")
         btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
     } else {
-        inputPass.setAttribute("type","password")
+        inputPass.setAttribute("type", "password")
         btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
     }
 }
 
-function showPassword1 () {
+function showPassword1() {
     let inputPass = document.getElementById("confirmar-senha");
     let btnShowPass = document.getElementById("btn-senha1");
 
-    if (inputPass.type === "password"){
-        inputPass.setAttribute("type","text")
+    if (inputPass.type === "password") {
+        inputPass.setAttribute("type", "text")
         btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
     } else {
-        inputPass.setAttribute("type","password")
+        inputPass.setAttribute("type", "password")
         btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
+    }
+}
+
+// Redirecinar para a página HTML desejada
+
+function paginaCriarConta() {
+
+    window.location.href = "criar_conta.html";
+}
+
+// Redirecinar para a página HTML desejada
+
+function detectarSistemaOperacional() {
+    const userAgent = window.navigator.userAgent;
+
+    if (/Android/i.test(userAgent)) {
+    
+        window.location.href = "https://www.youtube.com/watch?v=tRpHfjKml6k";
+
+    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+    
+        window.location.href = "https://www.youtube.com/watch?v=5gO0xpY_Y3E";
+
+    } else {
+    
+        window.location.href = "criar_conta.html";
+
     }
 }
 
