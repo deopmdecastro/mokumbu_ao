@@ -152,7 +152,7 @@ header {
 
 .download-button {
     color: white;
-    background-color: #6004bb;
+    background-color: #8000FF;
     padding: 10px 40px;
     border-radius: 50px;
     cursor: pointer;
@@ -354,7 +354,6 @@ main {
 
 .card:hover {
     transform: scale(1.1);
-    /* Escala de 110% ao passar o mouse (zoom) */
 }
 
 .card img {
@@ -370,13 +369,11 @@ main {
     transition: background-color 0.3s;
     border-radius: 50px;
     padding: 10px 40px;
-    border-radius: 50px;
     cursor: pointer;
     font-family: 'Arciformff', sans-serif;
     font-weight: 100;
     font-size: 15px;
     transition: transform 0.9s;
-    /* Transição de escala para suavizar o efeito hover */
 }
 
 .button-3 {
@@ -387,13 +384,11 @@ main {
     transition: background-color 0.3s;
     border-radius: 50px;
     padding: 10px 40px;
-    border-radius: 50px;
     cursor: pointer;
     font-family: 'Arciformff', sans-serif;
     font-weight: 100;
     font-size: 15px;
     transition: transform 0.9s;
-    /* Transição de escala para suavizar o efeito hover */
 }
 
 .download-button-2:hover {
@@ -452,7 +447,6 @@ main {
 
 .faq-title {
     width: 70%;
-    /* Ajuste o tamanho de acordo com suas necessidades */
     font-weight: bold;
 }
 
@@ -771,6 +765,7 @@ input[type="password"] {
 
 .senhas input {
     margin-top: 10px;
+    padding-right: 38px;
 }
 
 
@@ -794,6 +789,18 @@ input[type="password"] {
     font-size: 15px;
     margin-top: 5px;
 }
+
+
+
+/* Pagina ups*/
+
+.ups {
+    margin-left: 300px;
+    margin-right: 300px;
+  text-align: center;
+}
+
+/* fim pagina ups*/
 
 
 

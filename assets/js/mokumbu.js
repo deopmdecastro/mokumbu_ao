@@ -113,9 +113,12 @@ function showPassword() {
     if (inputPass.type === "password") {
         inputPass.setAttribute("type", "text")
         btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
+        inputPass.style.paddingRight = "38px";
+
     } else {
         inputPass.setAttribute("type", "password")
         btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
+        inputPass.style.paddingRight = "38px";
     }
 }
 
@@ -126,9 +129,11 @@ function showPassword1() {
     if (inputPass.type === "password") {
         inputPass.setAttribute("type", "text")
         btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
+        inputPass.style.paddingRight = "38px";
     } else {
         inputPass.setAttribute("type", "password")
         btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
+        inputPass.style.paddingRight = "38px";
     }
 }
 
@@ -154,7 +159,7 @@ function detectarSistemaOperacional() {
 
     } else {
     
-        window.location.href = "criar_conta.html";
+        window.location.href = "upsss.html";
 
     }
 }
